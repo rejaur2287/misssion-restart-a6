@@ -11,7 +11,7 @@ const displayProducts = (products) => {
     // console.log(product);
     const card = document.createElement("div");
     card.innerHTML = `
-      <div class="card bg-base-100 w-96 h-full shadow-sm">
+      <div class="card bg-base-100 w-96 h-full space-y-10 shadow-md">
       <figure>
         <img
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
