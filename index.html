@@ -108,65 +108,116 @@
       </section>
 
       <!-- Our Services -->
-      <section class="w-11/12 mx-auto">
-        <div class="text-center">
-          <h2>Why Choose Us</h2>
-          <p>
+      <section class="w-11/12 mx-auto bg-grey-300 my-10">
+        <div class="text-center mb-20">
+          <h2 class="text-3xl font-bold">Why Choose Us</h2>
+          <p class="text-lg">
             We provide the best shopping experience with top-notch services.
           </p>
         </div>
-        <div class="grid md:grid-cols-4 gap-4">
-          <div class="card bg-base-100 w-80 shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 place-items-center">
+          <div class="card bg-base-100 sm:w-full w-80 shadow-sm my-5">
             <div class="card-body">
-              <h2 class="card-title">Card title!</h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <div class="navbar-start">
+                <a class="btn -mt-10 bg-sky-100"
+                  ><i class="fa-regular fa-truck"></i
+                ></a>
               </div>
+              <h2 class="card-title">Fast Delivery</h2>
+              <p>
+                Get your orders delivered to your doorstep quickly an
+                efficiently.
+              </p>
             </div>
           </div>
-          <div class="card bg-base-100 w-80 shadow-sm">
+          <div class="card bg-base-100 sm:w-full w-80 shadow-sm my-5">
             <div class="card-body">
-              <h2 class="card-title">Card title!</h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <div class="navbar-start">
+                <a class="btn -mt-10 bg-sky-100"
+                  ><i class="fa-regular fa-headphones"></i
+                ></a>
               </div>
+              <h2 class="card-title">24/7 Support</h2>
+              <p>
+                Our support team is available around the clock to assist you.
+              </p>
             </div>
           </div>
-          <div class="card bg-base-100 w-80 shadow-sm">
+          <div class="card bg-base-100 sm:w-full w-80 shadow-sm my-5">
             <div class="card-body">
-              <h2 class="card-title">Card title!</h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <div class="navbar-start">
+                <a class="btn -mt-10 bg-sky-100"
+                  ><i class="fa-solid fa-shield-halved"></i
+                ></a>
               </div>
+              <h2 class="card-title">Secure Payment</h2>
+              <p>
+                Experience safe and secure transactions with our encrypted
+                payment systems.
+              </p>
             </div>
           </div>
-          <div class="card bg-base-100 w-80 shadow-sm">
+          <div class="card bg-base-100 sm:w-full w-80 shadow-sm my-5">
             <div class="card-body">
-              <h2 class="card-title">Card title!</h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <div class="navbar-start">
+                <a class="btn -mt-10 bg-sky-100"
+                  ><i class="fa-solid fa-recycle"></i
+                ></a>
               </div>
+              <h2 class="card-title">Easy Returns</h2>
+              <p>Not satisfied? Return your products easily within 30 days.</p>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <!-- Footer Section -->
+    <footer>
+      <footer
+        class="footer sm:footer-horizontal bg-base-200 text-base-content p-10"
+      >
+        <nav>
+          <a class="text-3xl text-violet-600 font-bold" href="">SwiftCart</a>
+          <p>
+            Your one-stop shop for all your fashion and lifestyle needs,
+            <br />Quality proucts, fast delivery, and excellent support
+          </p>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Quick Links</h6>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">Products</a>
+          <a class="link link-hover">About</a>
+          <a class="link link-hover">Contact</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Support</h6>
+          <a class="link link-hover">FAQ</a>
+          <a class="link link-hover">Shipping</a>
+          <a class="link link-hover">Returns</a>
+          <a class="link link-hover">Privacy policy</a>
+        </nav>
+        <form>
+          <h6 class="footer-title">Subscribe to our Newsletter</h6>
+          <fieldset class="joint w-80">
+            <label
+              >The latest news, articles, and resources, sent to your inbox
+              weekly.</label
+            >
+            <div class="join gap-3 my-3">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="input input-bordered rounded-lg joint"
+              />
+              <button class="btn btn-primary rounded-lg joint">
+                Subscribe
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
+    </footer>
 
     <script src="./index.js"></script>
   </body>
