@@ -53,8 +53,8 @@
               tabindex="-1"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li><a class="text-xl" href="#">Home</a></li>
-              <li><a class="text-xl" href="./product.html">Product</a></li>
+              <li><a class="text-xl" href="./index.html">Home</a></li>
+              <li><a class="text-xl">Product</a></li>
               <li><a class="text-xl">About</a></li>
               <li><a class="text-xl">Contact</a></li>
             </ul>
@@ -64,12 +64,12 @@
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li>
-              <a class="hover:bg-transparent text-xl" href="">Home</a>
+              <a class="hover:bg-transparent text-xl" href="./index.html"
+                >Home</a
+              >
             </li>
             <li>
-              <a class="hover:bg-transparent text-xl" href="./product.html"
-                >Product</a
-              >
+              <a class="hover:bg-transparent text-xl">Product</a>
             </li>
             <li>
               <a class="hover:bg-transparent text-xl">About</a>
@@ -87,100 +87,29 @@
 
     <!-- Main Section -->
     <main>
-      <!-- Banner Section -->
-      <section>
-        <div
-          class="hero min-h-screen"
-          style="background-image: url(./assets/banner-image.png)"
-        >
-          <div class="hero-overlay"></div>
-          <div
-            class="hero-content text-neutral-content text-left w-11/12 max-w-none justify-start"
-          >
-            <div class="max-w-md">
-              <h1 class="mb-5 text-4xl font-bold">Best Collection For You</h1>
-              <p class="mb-5">
-                Discover the latest trends in fashion, electronics, and more.
-                Shop with confidence and style with SwiftCraft.
-              </p>
-              <button class="btn btn-primary">Shop Now</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Our Services -->
-      <section class="w-11/12 mx-auto bg-grey-300">
-        <div class="text-center mb-20">
-          <h2 class="text-3xl font-bold">Why Choose Us</h2>
-          <p class="text-lg">
-            We provide the best shopping experience with top-notch services.
+      <h1>Products page</h1>
+      <div class="card bg-base-100 w-96 shadow-sm">
+        <figure>
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Card Title
+            <div class="badge badge-secondary">NEW</div>
+          </h2>
+          <p>
+            A card component has a figure, a body part, and inside body there
+            are title and actions parts
           </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 place-items-center">
-          <div class="card bg-base-100 sm:w-full w-80 shadow-sm my-5">
-            <div class="card-body">
-              <div class="navbar-start">
-                <a class="btn -mt-10 bg-sky-100"
-                  ><i class="fa-regular fa-truck"></i
-                ></a>
-              </div>
-              <h2 class="card-title">Fast Delivery</h2>
-              <p>
-                Get your orders delivered to your doorstep quickly an
-                efficiently.
-              </p>
-            </div>
-          </div>
-          <div class="card bg-base-100 sm:w-full w-80 shadow-sm my-5">
-            <div class="card-body">
-              <div class="navbar-start">
-                <a class="btn -mt-10 bg-sky-100"
-                  ><i class="fa-regular fa-headphones"></i
-                ></a>
-              </div>
-              <h2 class="card-title">24/7 Support</h2>
-              <p>
-                Our support team is available around the clock to assist you.
-              </p>
-            </div>
-          </div>
-          <div class="card bg-base-100 sm:w-full w-80 shadow-sm my-5">
-            <div class="card-body">
-              <div class="navbar-start">
-                <a class="btn -mt-10 bg-sky-100"
-                  ><i class="fa-solid fa-shield-halved"></i
-                ></a>
-              </div>
-              <h2 class="card-title">Secure Payment</h2>
-              <p>
-                Experience safe and secure transactions with our encrypted
-                payment systems.
-              </p>
-            </div>
-          </div>
-          <div class="card bg-base-100 sm:w-full w-80 shadow-sm my-5">
-            <div class="card-body">
-              <div class="navbar-start">
-                <a class="btn -mt-10 bg-sky-100"
-                  ><i class="fa-solid fa-recycle"></i
-                ></a>
-              </div>
-              <h2 class="card-title">Easy Returns</h2>
-              <p>Not satisfied? Return your products easily within 30 days.</p>
-            </div>
+          <div class="card-actions w-full gap-3">
+            <div class="btn btn-outline flex-1">Details</div>
+            <div class="btn btn-primary flex-1">Add</div>
           </div>
         </div>
-      </section>
-
-      <!-- Trending Now -->
-      <section class="w-11/12 mx-auto">
-        <h2 class="text-2xl font-bold my-5">Trending Now</h2>
-        <div
-          id="trending-now"
-          class="grid sm:grid-cols-1 place-content-center gap-4 py-4 md:grid-cols-3"
-        ></div>
-      </section>
+      </div>
     </main>
     <!-- Footer Section -->
     <footer>
@@ -229,7 +158,6 @@
         </form>
       </footer>
     </footer>
-
     <script src="./index.js"></script>
   </body>
 </html>
