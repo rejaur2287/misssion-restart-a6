@@ -6,19 +6,20 @@ const loadProducts = () => {
 };
 
 const displayProducts = (products) => {
-  const trendingProduct = document.getElementById("trending-now");
-  products.slice(0, 3).forEach((product) => {
-    // console.log(product);
+  const categoryContainer = document.getElementById("category-container");
+  products.forEach((product) => {
+    console.log(product.image);
     const card = document.createElement("div");
     card.innerHTML = `
       <div class="card bg-base-100 w-96 h-full space-y-10 shadow-md">
       <figure>
         <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
+        class="h-80 bg-slate-400 w-full p-1"
+          src="${product.image}"
+          alt="${product.title}"
         />
       </figure>
-      <div class="card-body">
+      <div class="card-body flex-grow flex flex-col justify-between">
 
       <div class="card-actions w-full gap-3 justify-between">
             <div class="badge badge-primary">${product.category}</div>
@@ -40,7 +41,7 @@ const displayProducts = (products) => {
       </div>
     </div>
     `;
-    trendingProduct.appendChild(card);
+    categoryContainer.appendChild(card);
   });
 };
 loadProducts();
